@@ -1,4 +1,5 @@
 import 'package:business_banking/features/cash_accounts/ui/cash_accounts_widget.dart';
+import 'package:business_banking/features/credit_cards/ui/credit_cards_widget.dart';
 import 'package:business_banking/features/customer/ui/customer_widget.dart';
 import 'package:business_banking/features/transfer_funds/ui/transfer_card.dart';
 import 'package:business_banking/features/quickpay/ui/quickpay_widget.dart';
@@ -22,8 +23,7 @@ class HubScreen extends Screen {
       body: Column(
         children: [
           Container(
-            padding:
-                const EdgeInsets.symmetric(vertical: 18.0, horizontal: 20.0),
+            padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 20.0),
             child: Center(
                 child: Text(
               'Welcome John Doe',
@@ -32,6 +32,8 @@ class HubScreen extends Screen {
           ),
           CashAccountsWidget(),
           //PromosWidget(),
+          SizedBox(height: 15),
+          CreditCardsWidget(),
           SizedBox(height: 15),
           TransferFundsCard(),
           SizedBox(height: 15),
